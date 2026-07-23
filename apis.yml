@@ -1,7 +1,23 @@
 aid: arro
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arro.png
 name: Arro
-description: Arro is a company surfaced as a portfolio company of bullpen-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Arro is a consumer fintech company that helps people build or rebuild credit without
+  traditional barriers. Its flagship product is the Arro Card, a Mastercard with no deposit and no
+  hard credit check that starts at up to $300 and grows to $2,500, issued by Community Federal Savings
+  Bank (member FDIC). The Arro app pairs the card with financial-education lessons, credit tracking,
+  personalized guidance, and Artie, an AI money coach. Arro is a mobile-first consumer product and does
+  not publish a public developer API, OpenAPI, or developer portal at this time.
 url: https://raw.githubusercontent.com/api-evangelist/arro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Financial Services
+- Fintech
+- Credit
+- Credit Cards
+- Consumer Lending
+- Credit Building
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/arro-domain-security.yml
 - type: Website
   url: https://www.arrofinance.com
+- type: PrivacyPolicy
+  url: https://app.arrofinance.com/privacy-policy.pdf
+- type: TermsOfService
+  url: https://app.arrofinance.com/terms-of-use.pdf
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
